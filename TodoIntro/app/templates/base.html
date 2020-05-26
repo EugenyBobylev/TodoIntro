@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{title}} - TODO</title>
+    {% else %}
+    <title>Welcome TODO</title>
+    {% endif %}
+</head>
+<body>
+    <div>Home: <a href="/index">В начало</a></div>
+    {% block content%}{% endblock %}
+</body>
+</html>
