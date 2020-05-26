@@ -6,4 +6,8 @@ from app import app
 @app.route('/index')
 def index():
     user = {'username': 'Eugeny Bobylev'}
-    return render_template('index.html', user=user)
+    tasks= [
+        {'descr': 'Создать приложение flask'},
+        {'descr': 'Использовать templates'}
+    ]
+    return render_template('index.html', user=user, tasks=tasks)
