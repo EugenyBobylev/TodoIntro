@@ -7,7 +7,7 @@ from app.forms import LoginForm
 @app.route('/index')
 def index():
     user = {'username': 'Eugeny Bobylev'}
-    tasks= [
+    tasks = [
         {'descr': 'Создать приложение flask'},
         {'descr': 'Использовать templates'}
     ]
